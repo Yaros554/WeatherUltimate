@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/helloFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.skyyaros.weatherultimate.ui.main.MainFragment"
+        android:label="WeatherUltimate"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment" />
+        <argument
+            android:name="city"
+            app:argType="com.skyyaros.weatherultimate.entity.FavouriteCity"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.skyyaros.weatherultimate.ui.detail.DetailFragment"
+        android:label="WeatherUltimate"
+        tools:layout="@layout/detail_fragment">
+        <argument
+            android:name="forecastTwoWeekArray"
+            app:argType="com.skyyaros.weatherultimate.entity.ForecastItemTwoWeek[]" />
+        <argument
+            android:name="forecastHourArray"
+            app:argType="com.skyyaros.weatherultimate.entity.ForecastItemHour[]" />
+        <argument
+            android:name="forecast3HourArray"
+            app:argType="com.skyyaros.weatherultimate.entity.ForecastItemHour[]" />
+        <argument
+            android:name="date"
+            app:argType="string" />
+        <argument
+            android:name="currentCity"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/favouriteFragment"
+        android:name="com.skyyaros.weatherultimate.ui.favourite.FavouriteFragment"
+        android:label="WeatherUltimate"
+        tools:layout="@layout/favourite_fragment">
+        <action
+            android:id="@+id/action_favouriteFragment_to_searchFragment"
+            app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_favouriteFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/mainFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.skyyaros.weatherultimate.ui.search.SearchFragment"
+        android:label="WeatherUltimate"
+        tools:layout="@layout/search_fragment">
+        <action
+            android:id="@+id/action_searchFragment_to_favouriteFragment"
+            app:destination="@id/favouriteFragment"
+            app:popUpTo="@id/favouriteFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/helloFragment"
+        android:name="com.skyyaros.weatherultimate.ui.HelloFragment"
+        android:label="HelloFragment"
+        tools:layout="@layout/hello_fragment">
+        <action
+            android:id="@+id/action_helloFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/helloFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

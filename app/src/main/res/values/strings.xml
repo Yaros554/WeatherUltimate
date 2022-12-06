@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name" translatable="false">Weather Ultimate</string>
+
+    <string name="no_location">Unable to determine current location</string>
+    <string name="no_foreca">Unable to get forecast</string>
+    <string name="need_permission">Location permission required!</string>
+    <string name="save_data">Previously saved data</string>
+    <string name="water_two_week">%1$.2f mm</string>
+    <string name="wind_two_week">%1$.1f m/s</string>
+    <string name="weather_now">Weather now:</string>
+    <string name="temp_current">%1$d℃, feel: %2$d℃</string>
+    <string name="wind_current">%1$.1f m/s, gust %2$.1f м/с</string>
+    <string name="wind_dir_current">Dir.: %1$s</string>
+    <string name="water_current">%1$.2f mm/h, %2$d%%</string>
+    <string name="favourite_cities">Favourite cities</string>
+
+    <string name="btn_view_viewpager">Review</string>
+    <string name="btn_hour_viewpager">1 hour</string>
+    <string name="btn_3hour_viewpager">3 hour</string>
+    <string name="not_hour_viewpager">Hourly forecast is available for up to 7 days</string>
+    <string name="max_temp_viewpager">Max temp.: %1$d℃, feel: %2$d℃</string>
+    <string name="min_temp_viewpager">Min temp.: %1$d℃, feel: %2$d℃</string>
+    <string name="precip_accum_viewpager">Rainfall: %1$.2f mm (water), %2$.2f mm (snow)</string>
+    <string name="precip_prob_viewpager">Probability of precipitation: %1$d%%</string>
+    <string name="wind_viewpager">Wind %1$.1f m/s, gust %2$.1f m/s</string>
+    <string name="wind_dir_viewpager">Direction of the wind: %1$s</string>
+    <string name="sunrise_viewpager">Sunrise: %1$s</string>
+    <string name="sunset_viewpager">Sunset: %1$s</string>
+    <string name="no_sun_viewpager">Not applicable</string>
+    <string name="temp_image_viewpager">Temperature</string>
+    <string name="rain_image_viewpager">Precipitation</string>
+    <string name="wind_image_viewpager">Wind</string>
+    <string name="sun_image_viewpager">Sun</string>
+
+    <string name="temp_hour">t°: %1$d</string>
+    <string name="temp_feel_hour">t° feel: %1$d</string>
+    <string name="wind_speed_hour">%1$.1f m/s</string>
+    <string name="wind_gust_hour">Gust %1$.1f m/s</string>
+    <string name="wind_dir_hour">Dir.: %1$s</string>
+    <string name="accum_water_hour">%1$.2f mm (water)</string>
+    <string name="accum_snow_hour">%1$.2f mm (snow)</string>
+    <string name="precip_prob_hour">%1$d %%</string>
+
+    <string name="fragment_favourite">Favourite</string>
+    <string name="location_favourite">My location</string>
+
+    <string name="fragment_search">Search</string>
+    <string name="begin_search">Search results will be here</string>
+    <string name="no_cities_search">Nothing found</string>
+    <string name="error_search">Error getting list of cities!</string>
+</resources>

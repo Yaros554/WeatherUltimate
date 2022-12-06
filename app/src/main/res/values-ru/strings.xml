@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather Ultimate</string>
+
+    <string name="no_location">Невозможно определить текущее местоположение</string>
+    <string name="no_foreca">Невозможно получить прогноз</string>
+    <string name="need_permission">Необходимо разрешение на определение местоположения!</string>
+    <string name="save_data">Ранее сохраненные данные</string>
+    <string name="water_two_week">%1$.2f мм</string>
+    <string name="wind_two_week">%1$.1f м/с</string>
+    <string name="weather_now">Погода сейчас:</string>
+    <string name="temp_current">%1$d℃, ощ. как: %2$d℃</string>
+    <string name="wind_current">%1$.1f м/с, порывы %2$.1f м/с</string>
+    <string name="wind_dir_current">Направление: %1$s</string>
+    <string name="water_current">%1$.2f мм/ч, %2$d%%</string>
+    <string name="favourite_cities">Избранные города</string>
+
+    <string name="btn_view_viewpager">Обзор</string>
+    <string name="btn_hour_viewpager">1 час</string>
+    <string name="btn_3hour_viewpager">3 часа</string>
+    <string name="not_hour_viewpager">Почасовой прогноз доступен на срок не более 7 дней</string>
+    <string name="max_temp_viewpager">Макс. темп.: %1$d℃, ощущается как: %2$d℃</string>
+    <string name="min_temp_viewpager">Мин. темп.: %1$d℃, ощущается как: %2$d℃</string>
+    <string name="precip_accum_viewpager">Уровень осадков: %1$.2f мм (вода), %2$.2f мм (снег)</string>
+    <string name="precip_prob_viewpager">Вероятность выпадения осадков: %1$d%%</string>
+    <string name="wind_viewpager">Ветер %1$.1f м/с, порывы до %2$.1f м/с</string>
+    <string name="wind_dir_viewpager">Направление ветра: %1$s</string>
+    <string name="sunrise_viewpager">Время восхода солнца: %1$s</string>
+    <string name="sunset_viewpager">Время заката солнца: %1$s</string>
+    <string name="no_sun_viewpager">Неприменимо</string>
+    <string name="temp_image_viewpager">Температура</string>
+    <string name="rain_image_viewpager">Осадки</string>
+    <string name="wind_image_viewpager">Ветер</string>
+    <string name="sun_image_viewpager">Солнце</string>
+
+    <string name="temp_hour">t°: %1$d</string>
+    <string name="temp_feel_hour">t° ощ.: %1$d</string>
+    <string name="wind_speed_hour">%1$.1f м/с</string>
+    <string name="wind_gust_hour">Порывы %1$.1f м/с</string>
+    <string name="wind_dir_hour">Напр.: %1$s</string>
+    <string name="accum_water_hour">%1$.2f мм (вода)</string>
+    <string name="accum_snow_hour">%1$.2f мм (снег)</string>
+    <string name="precip_prob_hour">%1$d %%</string>
+
+    <string name="fragment_favourite">Избранное</string>
+    <string name="location_favourite">Мое местоположение</string>
+
+    <string name="fragment_search">Поиск</string>
+    <string name="begin_search">Здесь будут результаты поиска</string>
+    <string name="no_cities_search">Ничего не найдено</string>
+    <string name="error_search">Ошибка получения списка городов!</string>
+</resources>

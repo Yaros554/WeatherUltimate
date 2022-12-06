@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/weather_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/foreca_anim"
+        android:layout_width="145dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <TextView
+        android:id="@+id/foreca_text"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:gravity="center"
+        tools:text="преимущественно ясно с легким снегом"
+        app:layout_constraintEnd_toEndOf="@+id/foreca_anim"
+        app:layout_constraintStart_toStartOf="@+id/foreca_anim"
+        app:layout_constraintTop_toBottomOf="@+id/foreca_anim"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/textTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textWind"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageTemp"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="+10℃, ощ.: +10℃" />
+
+    <TextView
+        android:id="@+id/textWind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textWindDir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWind"
+        app:layout_constraintTop_toBottomOf="@+id/textTemp"
+        android:layout_marginStart="16dp"
+        tools:text="15 м/с, порывы 15 м/с" />
+
+    <TextView
+        android:id="@+id/textWindDir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textRainInten"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWind"
+        app:layout_constraintTop_toBottomOf="@+id/textWind"
+        tools:text="Направление: СЗ" />
+
+    <TextView
+        android:id="@+id/textRainInten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@id/textPressure"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageWater"
+        app:layout_constraintTop_toBottomOf="@+id/textWindDir"
+        tools:text="99 мм/ч, 100%" />
+
+    <TextView
+        android:id="@+id/textPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/foreca_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageBarometer"
+        app:layout_constraintTop_toBottomOf="@+id/textRainInten"
+        tools:text="1020.95 hPa" />
+
+    <ImageView
+        android:id="@+id/imageTemp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textTemp"
+        app:layout_constraintStart_toEndOf="@+id/foreca_anim"
+        app:layout_constraintTop_toTopOf="@+id/textTemp"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/temphour" />
+
+    <ImageView
+        android:id="@+id/imageWind"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textWindDir"
+        app:layout_constraintStart_toEndOf="@+id/foreca_anim"
+        app:layout_constraintTop_toTopOf="@+id/textWind"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/windturbine" />
+
+    <ImageView
+        android:id="@+id/imageWater"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textRainInten"
+        app:layout_constraintStart_toEndOf="@+id/foreca_anim"
+        app:layout_constraintTop_toTopOf="@+id/textRainInten"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/water" />
+
+    <ImageView
+        android:id="@+id/imageBarometer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textPressure"
+        app:layout_constraintStart_toEndOf="@+id/foreca_anim"
+        app:layout_constraintTop_toTopOf="@+id/textPressure"
+        android:layout_marginStart="8dp"
+        android:src="@drawable/bar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
