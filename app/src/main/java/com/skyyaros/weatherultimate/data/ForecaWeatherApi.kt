@@ -1,5 +1,6 @@
 package com.skyyaros.weatherultimate.data
 
+import com.skyyaros.weatherultimate.BuildConfig
 import com.skyyaros.weatherultimate.entity.*
 import okhttp3.OkHttpClient
 import okhttp3.Request
@@ -57,7 +58,7 @@ interface ForecaWeatherApi {
 
     companion object RetrofitProvider {
         private const val BASE_URL = "https://pfa.foreca.com/"
-        private const val TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9wZmEuZm9yZWNhLmNvbVwvYXV0aG9yaXplXC90b2tlbiIsImlhdCI6MTY2ODU1MzkzMiwiZXhwIjo5OTk5OTk5OTk5LCJuYmYiOjE2Njg1NTM5MzIsImp0aSI6IjVlNWNhZjQwMzAwMGNkNGYiLCJzdWIiOiJ5YXJvc2xhdm9wYXJrbyIsImZtdCI6IlhEY09oakM0MCtBTGpsWVR0amJPaUE9PSJ9.ENuCE_xVDg_vV6lfWz4xhdrqliVCfVKxq0d6DF9APfg"
+        private const val TOKEN = BuildConfig.API_KEY
 
         fun provide(): ForecaWeatherApi {
             val client = OkHttpClient.Builder().addInterceptor { chain ->
