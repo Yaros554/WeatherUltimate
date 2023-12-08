@@ -20,4 +20,4 @@ Weather Ultimate - подробный прогноз для любой точк�
 -	Поставщик погоды – Foreca Weather Api
 
 ## Скриншоты
-![Главный экран](![image](https://github.com/Yaros554/WeatherUltimate/assets/73482710/bd78ac00-b915-4b86-9a10-8fa1d07e4f51)) ![Подробный прогноз](![image](https://github.com/Yaros554/WeatherUltimate/assets/73482710/2b9e7ba3-284c-4bf9-b7e2-397903ee73a9))
+<img src="https://github.com/Yaros554/WeatherUltimate/blob/main/screenshots/img.png" width="200">
