@@ -20,4 +20,8 @@ Weather Ultimate - подробный прогноз для любой точк�
 -	Поставщик погоды – Foreca Weather Api
 
 ## Скриншоты
-<img src="https://github.com/Yaros554/WeatherUltimate/blob/main/screenshots/img.png" width="200">
+<img src="https://github.com/Yaros554/WeatherUltimate/blob/main/screenshots/collage.jpg">
+
+## Заметки
+Для работы приложения необходимо получить токен [на сайте Foreca](https://developer.foreca.com/). В конец файла local.properties добавить строку api.key=полученный_токен_без_кавычек
+Подписка на ForecaApi платная, но имеется возможность заказать 30-дневный триал.
